@@ -20,11 +20,6 @@ class Model(object):
         self.labels = []
         labels_filename = "labels.txt"
 
-        # Create a list of labels.
-        with open(labels_filename, 'rt') as lf:
-            for l in lf:
-                self.labels.append(l.strip())
-
     def predict(self, imageFile):
         raise NotImplementedError
     
