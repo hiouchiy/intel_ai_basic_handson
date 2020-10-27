@@ -18,13 +18,15 @@ from sklearn.cluster import KMeans
 skl.set_config(assume_finite = True)
 # Fast CSV reading with pandas
 start = time.time()
+print('Data Loading Start...')
 train_data = pd.read_csv("kmeans_data.csv", dtype = np.float32)
-print('{} sec'.format(time.time()-start))
+print('Data Load Time: {} sec'.format(time.time()-start))
 
 alg = KMeans(n_clusters = 10, init = "random", tol = 0,
                          algorithm = "full", max_iter = 50)
 start = time.time()
+print('Training Start...')
 alg.fit(train_data)
-print('{} sec'.format(time.time()-start))
+print('Training Time: {} sec'.format(time.time()-start))
 
 
