@@ -72,5 +72,6 @@ else
 
 	#Go back to 'base' environemnt
 	conda activate base	
+	conda info -e
 fi
 
