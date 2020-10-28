@@ -11,6 +11,16 @@ if [ $# -lt 1 ]; then
 	echo "---Windows: Launch Task Manager -> open 'Performance Tab'"
 	echo "---MacOS: Launch a terminal -> type 'system_profiler SPHardwareDataType'"
 else
+
+#################################################
+# 2. Install Intel Python
+#################################################
+
+	echo "Starting to install additional modules..."
+	apt-get update
+	apt-get install -y libgl1-mesa-dev vim unzip numactl
+	echo "Installing additional module is done."
+
 #################################################
 # 2. Install Intel Python
 #################################################
