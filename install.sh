@@ -7,9 +7,9 @@
 if [ $# -lt 1 ]; then
     echo "Please set physical core number as a first parameter of this script."
     echo "Use the command or utility tool to check the physical core number on your device."
-    echo "---Linux: Launch a terminal -> type 'lscpu'"
-	echo "---Windows: Launch Task Manager -> open 'Performance Tab'"
-	echo "---MacOS: Launch a terminal -> type 'system_profiler SPHardwareDataType'"
+    echo "   Linux: Launch a terminal -> type 'lscpu'"
+	echo "   Windows: Launch Task Manager -> open 'Performance Tab'"
+	echo "   MacOS: Launch a terminal -> type 'system_profiler SPHardwareDataType'"
 else
 
 #################################################
