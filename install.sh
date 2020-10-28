@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 
 #################################################
 # 1. Initial Parameter Check
@@ -59,3 +59,4 @@ echo "Installing Intel TensorFlow and OSS TensorFlow is done."
 conda activate base
 
 exit 0
+
