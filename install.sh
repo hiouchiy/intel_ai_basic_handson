@@ -22,7 +22,7 @@ else
 	echo "Installing additional module is done."
 
 #################################################
-# 2. Install Intel Python
+# 3. Install Intel Python
 #################################################
 
 	echo "Starting installing Intel python and OSS python into each virtual environment..."
@@ -39,7 +39,7 @@ else
 	echo "Installing Intel python and OSS python is done."
 
 #################################################
-# 3. Install Intel TensorFlow
+# 4. Install Intel TensorFlow
 #################################################
 
 	echo "Starting installing Intel TensorFlow and OSS TensorFlow into each virtual environment..."
