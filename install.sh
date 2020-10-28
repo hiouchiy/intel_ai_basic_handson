@@ -62,6 +62,7 @@ else
 	export OMP_NUM_THREADS=$1
 	
 	#Download training data and unzip it.
+	cd ~
 	wget https://hiouchiystorage.blob.core.windows.net/share/data.zip
 	mkdir train_data
 	mv data.zip train_data/
