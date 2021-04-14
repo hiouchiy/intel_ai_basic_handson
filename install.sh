@@ -28,7 +28,7 @@ else
 	echo "Starting installing Intel python and OSS python into each virtual environment..."
 
 	#Create Intel Python virtual environment on Anaconda
-	conda create -n intel -c intel python=3.7 scikit-learn=0.22.1 pandas -y
+    conda create -n intel -c intel python=3.7 scikit-learn scikit-learn-intelex pandas -y
 
 	#Create OSS Python virtual environment on Anaconda
 	conda create -n oss -c conda-forge python=3.7 scikit-learn=0.22.1 pandas -y
