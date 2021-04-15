@@ -63,26 +63,27 @@ from sklearn.linear_model import LinearRegression
 import time
 
 # generate regression dataset
-print('Start datagen')
+print()
+row = 2000000
+col = 100
+print(f'Starting generating random data [{row}x{col}]...')
 start = time.time()
-X_train, X_test, y_train, y_test = load_data(shape=(1000000, 50), generated_data=['X_train', 'y_train'])
+X_train, X_test, y_train, y_test = load_data(shape=(row, col), generated_data=['X_train', 'y_train'])
 print('{} sec'.format(time.time()-start))
-print('End datagen')
+print('Finished.')
 
 regr = LinearRegression(fit_intercept=True, n_jobs=None, copy_X=False)
-#regr = LinearRegression()
 
 print()
-print('Start train')
+print('Starting training...')
 start = time.time()
 reg = regr.fit(X_train, y_train)
 print('{} sec'.format(time.time()-start))
-print('End train')
+print('Finished.')
 
 print()
-print('Start predict')
+print('Starting predicting...')
 start = time.time()
 reg.predict(X_test)
 print('{} sec'.format(time.time()-start))
-print('End predict')
-
+print('Finished.')
